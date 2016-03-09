@@ -8801,17 +8801,18 @@ button.close {
 }
 
 /* line 12, ../prueba/sass/_custom.scss */
-.icon-mobile-menu {
+.icon-mobile-menu,
+.fa-times {
   display: none;
 }
 
-/* line 18, ../prueba/sass/_custom.scss */
+/* line 21, ../prueba/sass/_custom.scss */
 .nav-pills a {
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 22, ../prueba/sass/_custom.scss */
+/* line 25, ../prueba/sass/_custom.scss */
 .nav-pills a:hover {
   background-color: rgba(255, 255, 255, 0) !important;
   border-radius: 0;
@@ -8819,7 +8820,7 @@ button.close {
   color: #4bcaff;
   padding: 5px 13px;
 }
-/* line 30, ../prueba/sass/_custom.scss */
+/* line 33, ../prueba/sass/_custom.scss */
 .nav-pills a:active {
   background-color: rgba(255, 255, 255, 0) !important;
   color: #4bcaff;
@@ -8827,57 +8828,65 @@ button.close {
   border: solid 2px #4bcaff;
 }
 
-/* line 40, ../prueba/sass/_custom.scss */
+/* line 43, ../prueba/sass/_custom.scss */
 .background-nav {
   background-color: rgba(70, 80, 87, 0.8);
   position: fixed;
   z-index: 2;
 }
 
-/* line 47, ../prueba/sass/_custom.scss */
+/* line 50, ../prueba/sass/_custom.scss */
 #block-silver-branding {
   display: inline-block;
   margin: 3% 0;
+  width: 33.33333333%;
+  float: left;
 }
 
-/* line 53, ../prueba/sass/_custom.scss */
+/* line 58, ../prueba/sass/_custom.scss */
 #block-silver-main-menu {
   display: inline-block;
   margin: 3% 0;
 }
 
-/* line 60, ../prueba/sass/_custom.scss */
+/* line 65, ../prueba/sass/_custom.scss */
 #site-menu {
   display: inline;
 }
 
 /*------------------ M E D I A  Q U E R I E S -------------------------*/
 @media (max-width: 768px) {
-  /* line 69, ../prueba/sass/_custom.scss */
+  /* line 74, ../prueba/sass/_custom.scss */
   .nav-pills li {
     display: block;
     float: none;
     padding: 5% 0;
   }
 
-  /* line 75, ../prueba/sass/_custom.scss */
+  /* line 80, ../prueba/sass/_custom.scss */
   .fa-times {
     color: #fff;
+    display: inline;
   }
 
-  /* line 79, ../prueba/sass/_custom.scss */
+  /* line 85, ../prueba/sass/_custom.scss */
   .icon-mobile-menu {
     color: #fff;
     display: inline;
     vertical-align: middle;
   }
 
-  /* line 85, ../prueba/sass/_custom.scss */
+  /* line 91, ../prueba/sass/_custom.scss */
   #block-silver-main-menu {
     width: 100%;
   }
 
-  /* line 89, ../prueba/sass/_custom.scss */
+  /* line 95, ../prueba/sass/_custom.scss */
+  #block-silver-branding {
+    width: 75%;
+  }
+
+  /* line 99, ../prueba/sass/_custom.scss */
   #site-wrapper {
     background: #428bca;
     height: 5000px;
@@ -8887,7 +8896,7 @@ button.close {
     width: 100%;
   }
 
-  /* line 97, ../prueba/sass/_custom.scss */
+  /* line 107, ../prueba/sass/_custom.scss */
   #site-canvas {
     height: 100%;
     position: relative;
@@ -8902,7 +8911,7 @@ button.close {
     backface-visibility: hidden;
   }
 
-  /* line 117, ../prueba/sass/_custom.scss */
+  /* line 127, ../prueba/sass/_custom.scss */
   .show-nav #site-canvas {
     -webkit-transform: translateX(300px);
     transform: translateX(300px);
@@ -8910,7 +8919,7 @@ button.close {
     transform: translate3d(300px, 0, 0);
   }
 
-  /* line 125, ../prueba/sass/_custom.scss */
+  /* line 135, ../prueba/sass/_custom.scss */
   #site-menu {
     background: #428bca;
     height: 100%;
@@ -8922,7 +8931,7 @@ button.close {
   }
 
   /* Just styles... Not relevant to demo */
-  /* line 136, ../prueba/sass/_custom.scss */
+  /* line 146, ../prueba/sass/_custom.scss */
   #big-sexy {
     display: block;
     font-size: 40px;

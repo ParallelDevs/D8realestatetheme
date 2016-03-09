@@ -33,7 +33,7 @@
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
 
-<div id="site-menu" class="col-md-6">
+<div id="site-menu" class="col-md-8">
   <a href="#" class="toggle-nav" style="color: pink; font-size: 20px;"><i class="fa fa-times"></i></a>
   <nav class="pull-right" role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
     {# Label. If not displayed, we still provide it for screen readers. #}

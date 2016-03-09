@@ -9,9 +9,12 @@
     padding: 7px 15px;
 }
 
-.icon-mobile-menu {
+.icon-mobile-menu,
+.fa-times {
   display: none;
 }
+
+
 
 // NAVIGATION
 .nav-pills {
@@ -47,6 +50,8 @@
 #block-silver-branding {
   display: inline-block;
   margin: 3% 0;
+  width: 33.33333333%;
+  float: left;
 }
 
 //MENU BLOCK
@@ -74,6 +79,7 @@
   }
   .fa-times {
     color: #fff;
+    display: inline;
   }
 
   .icon-mobile-menu {
@@ -84,6 +90,10 @@
 
   #block-silver-main-menu {
     width: 100%;
+  }
+
+  #block-silver-branding {
+    width: 75%;
   }
 
   #site-wrapper {
