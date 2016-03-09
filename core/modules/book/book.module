@@ -351,7 +351,7 @@ function book_form_node_confirm_form_alter(&$form, FormStateInterface $form_stat
 /**
  * Prepares variables for book listing block templates.
  *
- * Default template: book-all-books-block.html.twig.
+ * Default template: book-all-books-block--social-media.html.twig.
  *
  * All non-renderable elements are removed so that the template has full access
  * to the structured data but can also simply iterate over all elements and

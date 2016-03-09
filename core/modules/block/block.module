@@ -195,15 +195,15 @@ function block_theme_suggestions_block(array $variables) {
 /**
  * Prepares variables for block templates.
  *
- * Default template: block.html.twig.
+ * Default template: block--social-media.html.twig.
  *
  * Prepares the values passed to the theme_block function to be passed
  * into a pluggable template engine. Uses block properties to generate a
  * series of template file suggestions. If none are found, the default
- * block.html.twig is used.
+ * block--social-media.html.twig is used.
  *
- * Most themes use their own copy of block.html.twig. The default is located
- * inside "core/modules/block/templates/block.html.twig". Look in there for the
+ * Most themes use their own copy of block--social-media.html.twig. The default is located
+ * inside "core/modules/block/templates/block--social-media.html.twig". Look in there for the
  * full list of available variables.
  *
  * @param array $variables

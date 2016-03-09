@@ -151,3 +151,36 @@
     width: 300px;
   }
 }
+
+
+/*------------------ S O C I A L   M E D I A  -------------------------*/
+
+#block-twitter {
+  background: rgb(71, 201, 253) none repeat scroll 0% 0%;
+  padding: 2%;
+  height: 300px;
+  h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 3%;
+    @media screen and (max-width: 768px){
+      margin-left: 2%;
+    }
+  }
+  img {
+    width: 32px;
+    @media screen and (max-width: 768px){
+      margin: 0 auto;
+    }
+  }
+  p {
+    color: white;
+    font-size: 2rem;
+    margin: 1% 0;
+    @media screen and (max-width: 768px){
+      margin: 6% 0;
+    }
+  }
+}
+
+

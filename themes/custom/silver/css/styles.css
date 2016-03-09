@@ -8940,3 +8940,44 @@ button.close {
     width: 300px;
   }
 }
+/*------------------ S O C I A L   M E D I A  -------------------------*/
+/* line 158, ../prueba/sass/_custom.scss */
+#block-twitter {
+  background: #47c9fd none repeat scroll 0% 0%;
+  padding: 2%;
+  height: 300px;
+}
+/* line 162, ../prueba/sass/_custom.scss */
+#block-twitter h2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+@media screen and (max-width: 768px) {
+  /* line 162, ../prueba/sass/_custom.scss */
+  #block-twitter h2 {
+    margin-left: 2%;
+  }
+}
+/* line 170, ../prueba/sass/_custom.scss */
+#block-twitter img {
+  width: 32px;
+}
+@media screen and (max-width: 768px) {
+  /* line 170, ../prueba/sass/_custom.scss */
+  #block-twitter img {
+    margin: 0 auto;
+  }
+}
+/* line 176, ../prueba/sass/_custom.scss */
+#block-twitter p {
+  color: white;
+  font-size: 2rem;
+  margin: 1% 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 176, ../prueba/sass/_custom.scss */
+  #block-twitter p {
+    margin: 6% 0;
+  }
+}

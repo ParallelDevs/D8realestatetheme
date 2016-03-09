@@ -45,7 +45,7 @@ class TwigRegistryLoaderTest extends WebTestBase {
    * Tests template discovery using the Drupal theme registry.
    */
   public function testTemplateDiscovery() {
-    $this->assertTwigTemplate($this->twig->resolveTemplate('block.html.twig'), 'Found block.html.twig in block module.');
+    $this->assertTwigTemplate($this->twig->resolveTemplate('block--social-media.html.twig'), 'Found block--social-media.html.twig in block module.');
   }
 
   /**
