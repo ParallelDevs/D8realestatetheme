@@ -1,0 +1,143 @@
+/*----------------------------------------------------------------
+       ***********  C U S T O M  S T Y L E S *********
+ -----------------------------------------------------------------*/
+
+
+
+/*------------------ N A V I G A T I O N -------------------------*/
+.nav > li > a {
+    padding: 7px 15px;
+}
+
+.icon-mobile-menu {
+  display: none;
+}
+
+// NAVIGATION
+.nav-pills {
+  a {
+    color: $gray-light;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0) !important;
+      border-radius: 0;
+      border: solid 2px $brand-primary;
+      color: $brand-primary;
+      padding: 5px 13px;
+
+    }
+    &:active {
+      background-color: rgba(255, 255, 255, 0) !important;
+      color: $brand-primary;
+      border-radius: 0;
+      border: solid 2px $brand-primary;
+    }
+  }
+}
+
+//CONTAINER FOR NAVIGATION
+.background-nav {
+  background-color: rgba(70, 80, 87, 0.8);
+  position: fixed;
+  z-index: 2;
+}
+
+//BRAND BLOCK
+#block-silver-branding {
+  display: inline-block;
+  margin: 3% 0;
+}
+
+//MENU BLOCK
+#block-silver-main-menu {
+  display: inline-block;
+  margin: 3% 0;
+}
+
+
+//CONTAINER FOR MOBILE NAV HIDDEN
+#site-menu {
+  display: inline;
+}
+
+/*------------------ M E D I A  Q U E R I E S -------------------------*/
+
+@media (max-width: 768px){
+
+  .nav-pills {
+    li {
+      display: block;
+      float: none;
+      padding: 5% 0;
+    }
+  }
+  .fa-times {
+    color: #fff;
+  }
+
+  .icon-mobile-menu {
+    color: #fff;
+    display: inline;
+    vertical-align: middle;
+    }
+
+  #block-silver-main-menu {
+    width: 100%;
+  }
+
+  #site-wrapper {
+    background: #428bca;
+    height: 5000px; /* Temp: Simulates a tall page. */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  #site-canvas {
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    -webkit-transition: 300ms ease all;
+    transition: 300ms ease all;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    //padding: 5% 0; /* Temp: Just spacing. */
+  }
+
+  .show-nav #site-canvas {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+
+    -webkit-transform: translate3d(300px, 0, 0);
+    transform: translate3d(300px, 0, 0);
+  }
+
+  #site-menu {
+    background: #428bca;
+    height: 100%;
+    left: -300px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+  }
+  /* Just styles... Not relevant to demo */
+
+  #big-sexy {
+    display: block;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0 auto;
+    width: 300px;
+  }
+}
