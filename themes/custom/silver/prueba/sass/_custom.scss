@@ -77,6 +77,7 @@
       padding: 5% 0;
     }
   }
+
   .fa-times {
     color: #fff;
     display: inline;
@@ -184,3 +185,24 @@
 }
 
 
+/*------------------ T E S T I M O N I A L S  -------------------------*/
+
+#block-views-block-testimonials-slider-block-1 {
+  background: #fff;
+  height: 360px;
+
+  .swiper-slide {
+    text-align: left;
+  }
+}
+
+.testimonials-person-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+  }
+
+.testimonials-main-title {
+  margin-top:  80px;
+  margin-bottom: 55px;
+}
