@@ -8986,22 +8986,22 @@ button.close {
 /* line 190, ../prueba/sass/_custom.scss */
 #block-views-block-testimonials-slider-block-1 {
   background: #fff;
-  height: 360px;
+  height: auto;
 }
 /* line 194, ../prueba/sass/_custom.scss */
 #block-views-block-testimonials-slider-block-1 .swiper-slide {
+  margin: 35px 0;
   text-align: left;
 }
 
-/* line 199, ../prueba/sass/_custom.scss */
+/* line 200, ../prueba/sass/_custom.scss */
 .testimonials-person-name {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: left;
 }
 
-/* line 205, ../prueba/sass/_custom.scss */
+/* line 206, ../prueba/sass/_custom.scss */
 .testimonials-main-title {
-  margin-top: 80px;
-  margin-bottom: 55px;
+  margin-top: 6%;
 }
