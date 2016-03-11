@@ -1,21 +1,19 @@
 /*----------------------------------------------------------------
        ***********  C U S T O M  S T Y L E S *********
  -----------------------------------------------------------------*/
-@font-face {
-    font-family: Segoe;
-    src: url(/fonts/Segoe_UI_Light.ttf);
+* {
+  font-family: 'Open Sans', sans-serif;
 }
-
-h2 {
-  font-family: Segoe, Arial;
-}
-
 
 h2 {
   text-transform: uppercase;
 }
 
-
+#off-canvas {
+  .nav-pills {
+    display: none;
+  }
+}
 /*------------------ N A V I G A T I O N -------------------------*/
 .nav > li > a {
     padding: 7px 15px;
@@ -166,15 +164,26 @@ h2 {
 
 
 /*------------------ S O C I A L   M E D I A  -------------------------*/
-
+.tweet-container {
+  padding-left: 0;
+}
 #block-twitter {
   background: rgb(71, 201, 253) none repeat scroll 0% 0%;
   padding: 2%;
   height: 300px;
   h2 {
     color: white;
+    font-weight: 300;
     font-size: 3rem;
     margin-bottom: 3%;
+    &::after {
+      background: #fff;
+      content: " ";
+      display: block;
+      height: 3px;
+      margin-top: 5px;
+      width: 50px;
+    }
     @media screen and (max-width: 768px){
       margin-left: 2%;
     }
@@ -201,6 +210,9 @@ h2 {
 #block-views-block-testimonials-slider-block-1 {
   background: #fff;
   height: auto;
+  p,h2 {
+    color: $gray-darker;
+  }
 
   .swiper-slide {
     margin: 35px 0;
@@ -211,12 +223,25 @@ h2 {
 .testimonials-person-name {
     font-size: 1.5rem;
     font-weight: bold;
+    padding-left: 0;
     text-align: left;
   }
 
+.text {
+  padding-left: 0;
+}
+
 .testimonials-main-title {
+  font-weight: 300;
   margin-top:  6%;
-  //margin-bottom: 2%;
+  &::after {
+    background: $gray-darker;
+    content: " ";
+    display: block;
+    height: 3px;
+    margin-top: 5px;
+    width: 50px;
+  }
 }
 
 
@@ -227,19 +252,34 @@ h2 {
   padding: 6% 0;
 }
 
+.best-property-title-container {
+  float: none;
+  padding-left: 0;
+}
 #block-segundaprueba {
   h2 {
     color: #fff;
+    font-weight: 300;
+    &::after {
+      background: #fff;
+      content: " ";
+      display: block;
+      height: 3px;
+      margin-top: 5px;
+      margin-bottom: 40px;
+      width: 50px;
+    }
   }
   p {
     color: #fff;
     font-size: 1.8rem;
-    margin: 1% 0;
+    margin: 2.2% 0;
   }
 }
 
 .video-wrapper {
-    height: 300px;
+  height: 300px;
+  margin-top: -7%;
   @media screen and (max-width: 768px){
     margin: 5% 0px;
   }
@@ -253,12 +293,13 @@ h2 {
 }
 
 .text-intro-video {
+  padding-left: 0;
   @media screen and (max-width: 768px){
     padding: 2%;
   }
   a {
-    border: solid 2px rgba(0, 0, 0, 0.78);
-    color: rgba(0, 0, 0, 0.78);
+    border: solid 2px #353f46;
+    color: #353f46;
     font-size: 1.4rem;
     font-weight: bold;
     padding: 3% 6%;
@@ -275,19 +316,59 @@ h2 {
 
 .services-container {
   background-color: rgb(71, 201, 253);
+  padding: 2.7% 0;
 
-   h2 {
+  .service-item-title {
     color: #fff;
-    margin-top: 22%; 
-    text-align: center;
+     font-size: 2.5rem;
   }
   p {
     color: #fff;
-    //font-size: 2rem;
+    font-size: 12px;
     margin: 11% 0;
   }
+}
 
-  img {
-    margin: 0 auto;
+.services-main-title {
+  color: #fff;
+  font-weight: 300;
+  &::after {
+    background: #fff;
+    content: " ";
+    display: block;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    width: 50px;
   }
+}
+
+/*------------------  F O O T E R  S E C T I O N   -------------------------*/
+
+footer {
+  background: $gray-darker;
+  padding: 3% 0px;
+  h5 {
+    color: #6f787e;
+    text-align: right;
+  }
+  ul {
+    padding-left: 0 ;
+    li {
+      display: inline-block;
+      list-style: none;
+      a {
+        border-right: solid 2px #6f787e;
+        color: #6f787e;
+        padding: 0 15px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.footer-menu-container {
+  padding-left: 0;
 }

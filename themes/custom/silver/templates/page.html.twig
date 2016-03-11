@@ -50,17 +50,13 @@
   <header>
     <div class="background-nav col-md-12 col-xs-12">
       <div class="container">
-
-
         {{ page.navigation }}
-
         </div><!-- container -->
       </div><!-- background-nav -->
     {{ page.hero }}
   </header>
 
   {{ page.primary_menu }}
-  {{ page.secondary_menu }}
 
   {{ page.breadcrumb }}
 
@@ -92,21 +88,21 @@
 
   </main>
 
-    <footer role="contentinfo">
-      <div class="row">
-        <div class="col-md-6">
-          {% if page.secondary_menu %}
-            {{ page.secondary_menu }}
-          {% endif %}
-        </div>
-        <div class="col-md-6">
-          {% if page.copyright %}
-              {{ page.copyright }}
-          {% endif %}
-
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 footer-menu-container">
+            {% if page.secondary_menu %}
+              {{ page.secondary_menu }}
+            {% endif %}
+          </div>
+          <div class="col-md-6">
+            {% if page.copyright %}
+                {{ page.copyright }}
+            {% endif %}
+          </div>
         </div>
       </div>
-
     </footer>
 
 </div>{# /.layout-container #}
