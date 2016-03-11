@@ -8794,25 +8794,39 @@ button.close {
 /*----------------------------------------------------------------
        ***********  C U S T O M  S T Y L E S *********
  -----------------------------------------------------------------*/
+@font-face {
+  font-family: Segoe;
+  src: url(/fonts/Segoe_UI_Light.ttf);
+}
+/* line 9, ../prueba/sass/_custom.scss */
+h2 {
+  font-family: Segoe, Arial;
+}
+
+/* line 14, ../prueba/sass/_custom.scss */
+h2 {
+  text-transform: uppercase;
+}
+
 /*------------------ N A V I G A T I O N -------------------------*/
-/* line 8, ../prueba/sass/_custom.scss */
+/* line 20, ../prueba/sass/_custom.scss */
 .nav > li > a {
   padding: 7px 15px;
 }
 
-/* line 12, ../prueba/sass/_custom.scss */
+/* line 24, ../prueba/sass/_custom.scss */
 .icon-mobile-menu,
 .fa-times {
   display: none;
 }
 
-/* line 21, ../prueba/sass/_custom.scss */
+/* line 32, ../prueba/sass/_custom.scss */
 .nav-pills a {
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 25, ../prueba/sass/_custom.scss */
+/* line 36, ../prueba/sass/_custom.scss */
 .nav-pills a:hover {
   background-color: rgba(255, 255, 255, 0) !important;
   border-radius: 0;
@@ -8820,7 +8834,7 @@ button.close {
   color: #4bcaff;
   padding: 5px 13px;
 }
-/* line 33, ../prueba/sass/_custom.scss */
+/* line 44, ../prueba/sass/_custom.scss */
 .nav-pills a:active {
   background-color: rgba(255, 255, 255, 0) !important;
   color: #4bcaff;
@@ -8828,14 +8842,14 @@ button.close {
   border: solid 2px #4bcaff;
 }
 
-/* line 43, ../prueba/sass/_custom.scss */
+/* line 54, ../prueba/sass/_custom.scss */
 .background-nav {
   background-color: rgba(70, 80, 87, 0.8);
   position: fixed;
   z-index: 2;
 }
 
-/* line 50, ../prueba/sass/_custom.scss */
+/* line 61, ../prueba/sass/_custom.scss */
 #block-silver-branding {
   display: inline-block;
   margin: 3% 0;
@@ -8843,50 +8857,50 @@ button.close {
   float: left;
 }
 
-/* line 58, ../prueba/sass/_custom.scss */
+/* line 69, ../prueba/sass/_custom.scss */
 #block-silver-main-menu {
   display: inline-block;
   margin: 3% 0;
 }
 
-/* line 65, ../prueba/sass/_custom.scss */
+/* line 76, ../prueba/sass/_custom.scss */
 #site-menu {
   display: inline;
 }
 
 /*------------------ M E D I A  Q U E R I E S -------------------------*/
 @media (max-width: 768px) {
-  /* line 74, ../prueba/sass/_custom.scss */
+  /* line 85, ../prueba/sass/_custom.scss */
   .nav-pills li {
     display: block;
     float: none;
     padding: 5% 0;
   }
 
-  /* line 81, ../prueba/sass/_custom.scss */
+  /* line 92, ../prueba/sass/_custom.scss */
   .fa-times {
     color: #fff;
     display: inline;
   }
 
-  /* line 86, ../prueba/sass/_custom.scss */
+  /* line 97, ../prueba/sass/_custom.scss */
   .icon-mobile-menu {
     color: #fff;
     display: inline;
     vertical-align: middle;
   }
 
-  /* line 92, ../prueba/sass/_custom.scss */
+  /* line 103, ../prueba/sass/_custom.scss */
   #block-silver-main-menu {
     width: 100%;
   }
 
-  /* line 96, ../prueba/sass/_custom.scss */
+  /* line 107, ../prueba/sass/_custom.scss */
   #block-silver-branding {
     width: 75%;
   }
 
-  /* line 100, ../prueba/sass/_custom.scss */
+  /* line 111, ../prueba/sass/_custom.scss */
   #site-wrapper {
     background: #428bca;
     height: 5000px;
@@ -8896,7 +8910,7 @@ button.close {
     width: 100%;
   }
 
-  /* line 108, ../prueba/sass/_custom.scss */
+  /* line 119, ../prueba/sass/_custom.scss */
   #site-canvas {
     height: 100%;
     position: relative;
@@ -8911,7 +8925,7 @@ button.close {
     backface-visibility: hidden;
   }
 
-  /* line 128, ../prueba/sass/_custom.scss */
+  /* line 139, ../prueba/sass/_custom.scss */
   .show-nav #site-canvas {
     -webkit-transform: translateX(300px);
     transform: translateX(300px);
@@ -8919,7 +8933,7 @@ button.close {
     transform: translate3d(300px, 0, 0);
   }
 
-  /* line 136, ../prueba/sass/_custom.scss */
+  /* line 147, ../prueba/sass/_custom.scss */
   #site-menu {
     background: #428bca;
     height: 100%;
@@ -8931,7 +8945,7 @@ button.close {
   }
 
   /* Just styles... Not relevant to demo */
-  /* line 147, ../prueba/sass/_custom.scss */
+  /* line 158, ../prueba/sass/_custom.scss */
   #big-sexy {
     display: block;
     font-size: 40px;
@@ -8941,67 +8955,150 @@ button.close {
   }
 }
 /*------------------ S O C I A L   M E D I A  -------------------------*/
-/* line 159, ../prueba/sass/_custom.scss */
+/* line 170, ../prueba/sass/_custom.scss */
 #block-twitter {
   background: #47c9fd none repeat scroll 0% 0%;
   padding: 2%;
   height: 300px;
 }
-/* line 163, ../prueba/sass/_custom.scss */
+/* line 174, ../prueba/sass/_custom.scss */
 #block-twitter h2 {
   color: white;
   font-size: 3rem;
   margin-bottom: 3%;
 }
 @media screen and (max-width: 768px) {
-  /* line 163, ../prueba/sass/_custom.scss */
+  /* line 174, ../prueba/sass/_custom.scss */
   #block-twitter h2 {
     margin-left: 2%;
   }
 }
-/* line 171, ../prueba/sass/_custom.scss */
+/* line 182, ../prueba/sass/_custom.scss */
 #block-twitter img {
   width: 32px;
 }
 @media screen and (max-width: 768px) {
-  /* line 171, ../prueba/sass/_custom.scss */
+  /* line 182, ../prueba/sass/_custom.scss */
   #block-twitter img {
     margin: 0 auto;
   }
 }
-/* line 177, ../prueba/sass/_custom.scss */
+/* line 188, ../prueba/sass/_custom.scss */
 #block-twitter p {
   color: white;
   font-size: 2rem;
   margin: 1% 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 177, ../prueba/sass/_custom.scss */
+  /* line 188, ../prueba/sass/_custom.scss */
   #block-twitter p {
     margin: 6% 0;
   }
 }
 
 /*------------------ T E S T I M O N I A L S  -------------------------*/
-/* line 190, ../prueba/sass/_custom.scss */
+/* line 201, ../prueba/sass/_custom.scss */
 #block-views-block-testimonials-slider-block-1 {
   background: #fff;
   height: auto;
 }
-/* line 194, ../prueba/sass/_custom.scss */
+/* line 205, ../prueba/sass/_custom.scss */
 #block-views-block-testimonials-slider-block-1 .swiper-slide {
   margin: 35px 0;
   text-align: left;
 }
 
-/* line 200, ../prueba/sass/_custom.scss */
+/* line 211, ../prueba/sass/_custom.scss */
 .testimonials-person-name {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: left;
 }
 
-/* line 206, ../prueba/sass/_custom.scss */
+/* line 217, ../prueba/sass/_custom.scss */
 .testimonials-main-title {
   margin-top: 6%;
+}
+
+/*------------------  V I D E O  S E C T I O N   -------------------------*/
+/* line 225, ../prueba/sass/_custom.scss */
+.video-section-container {
+  background-color: #465057;
+  padding: 6% 0;
+}
+
+/* line 231, ../prueba/sass/_custom.scss */
+#block-segundaprueba h2 {
+  color: #fff;
+}
+/* line 234, ../prueba/sass/_custom.scss */
+#block-segundaprueba p {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 1% 0;
+}
+
+/* line 241, ../prueba/sass/_custom.scss */
+.video-wrapper {
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+  /* line 241, ../prueba/sass/_custom.scss */
+  .video-wrapper {
+    margin: 5% 0px;
+  }
+}
+/* line 246, ../prueba/sass/_custom.scss */
+.video-wrapper iframe {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  /* line 246, ../prueba/sass/_custom.scss */
+  .video-wrapper iframe {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 255, ../prueba/sass/_custom.scss */
+  .text-intro-video {
+    padding: 2%;
+  }
+}
+/* line 259, ../prueba/sass/_custom.scss */
+.text-intro-video a {
+  border: solid 2px rgba(0, 0, 0, 0.78);
+  color: rgba(0, 0, 0, 0.78);
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 3% 6%;
+  text-transform: uppercase;
+}
+/* line 266, ../prueba/sass/_custom.scss */
+.text-intro-video a:hover {
+  border: solid 2px #4bcaff;
+  color: #4bcaff;
+  text-decoration: none;
+}
+
+/*--------------   S E R V I C E S   S E C T I O N   --------------------*/
+/* line 276, ../prueba/sass/_custom.scss */
+.services-container {
+  background-color: #47c9fd;
+}
+/* line 279, ../prueba/sass/_custom.scss */
+.services-container h2 {
+  color: #fff;
+  margin-top: 22%;
+  text-align: center;
+}
+/* line 284, ../prueba/sass/_custom.scss */
+.services-container p {
+  color: #fff;
+  margin: 11% 0;
+}
+/* line 290, ../prueba/sass/_custom.scss */
+.services-container img {
+  margin: 0 auto;
 }

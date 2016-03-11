@@ -13,7 +13,12 @@
  */
 #}
 {% if content %}
-  <div {{ attributes }}>
-    {{ content }}
+<div class="services-container">
+	
+  <div class="container" {{ attributes }}>
+	  <div class="row">
+	    {{ content }}	
+	  </div>
   </div>
+</div>
 {% endif %}

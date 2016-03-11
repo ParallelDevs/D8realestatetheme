@@ -1,7 +1,19 @@
 /*----------------------------------------------------------------
        ***********  C U S T O M  S T Y L E S *********
  -----------------------------------------------------------------*/
+@font-face {
+    font-family: Segoe;
+    src: url(/fonts/Segoe_UI_Light.ttf);
+}
 
+h2 {
+  font-family: Segoe, Arial;
+}
+
+
+h2 {
+  text-transform: uppercase;
+}
 
 
 /*------------------ N A V I G A T I O N -------------------------*/
@@ -16,7 +28,6 @@
 
 
 
-// NAVIGATION
 .nav-pills {
   a {
     color: $gray-light;
@@ -189,9 +200,10 @@
 
 #block-views-block-testimonials-slider-block-1 {
   background: #fff;
-  height: 360px;
+  height: auto;
 
   .swiper-slide {
+    margin: 35px 0;
     text-align: left;
   }
 }
@@ -203,6 +215,79 @@
   }
 
 .testimonials-main-title {
-  margin-top:  80px;
-  margin-bottom: 55px;
+  margin-top:  6%;
+  //margin-bottom: 2%;
+}
+
+
+/*------------------  V I D E O  S E C T I O N   -------------------------*/
+
+.video-section-container {
+  background-color: $gray-darker;
+  padding: 6% 0;
+}
+
+#block-segundaprueba {
+  h2 {
+    color: #fff;
+  }
+  p {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 1% 0;
+  }
+}
+
+.video-wrapper {
+    height: 300px;
+  @media screen and (max-width: 768px){
+    margin: 5% 0px;
+  }
+  iframe {
+    height: 100%;
+    width: 100%;
+    @media screen and (max-width: 768px){
+      height: 100%;
+    }
+  }
+}
+
+.text-intro-video {
+  @media screen and (max-width: 768px){
+    padding: 2%;
+  }
+  a {
+    border: solid 2px rgba(0, 0, 0, 0.78);
+    color: rgba(0, 0, 0, 0.78);
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 3% 6%;
+    text-transform: uppercase;
+    &:hover {
+      border: solid 2px $brand-primary;
+      color: $brand-primary;
+      text-decoration: none; 
+    }
+  }
+}
+
+/*--------------   S E R V I C E S   S E C T I O N   --------------------*/
+
+.services-container {
+  background-color: rgb(71, 201, 253);
+
+   h2 {
+    color: #fff;
+    margin-top: 22%; 
+    text-align: center;
+  }
+  p {
+    color: #fff;
+    //font-size: 2rem;
+    margin: 11% 0;
+  }
+
+  img {
+    margin: 0 auto;
+  }
 }
