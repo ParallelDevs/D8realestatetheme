@@ -8904,7 +8904,7 @@ h2 {
   /* line 109, ../prueba/sass/_custom.scss */
   #site-wrapper {
     background: #428bca;
-    height: 5000px;
+    height: auto;
     /* Temp: Simulates a tall page. */
     overflow: hidden;
     position: relative;
@@ -8983,52 +8983,46 @@ h2 {
   margin-top: 5px;
   width: 50px;
 }
-@media screen and (max-width: 768px) {
-  /* line 174, ../prueba/sass/_custom.scss */
-  #block-twitter h2 {
-    margin-left: 2%;
-  }
-}
-/* line 191, ../prueba/sass/_custom.scss */
+/* line 188, ../prueba/sass/_custom.scss */
 #block-twitter img {
   width: 32px;
 }
-@media screen and (max-width: 768px) {
-  /* line 191, ../prueba/sass/_custom.scss */
-  #block-twitter img {
-    margin: 0 auto;
-  }
-}
-/* line 197, ../prueba/sass/_custom.scss */
+/* line 191, ../prueba/sass/_custom.scss */
 #block-twitter p {
   color: white;
   font-size: 2rem;
   margin: 1% 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 197, ../prueba/sass/_custom.scss */
+  /* line 191, ../prueba/sass/_custom.scss */
   #block-twitter p {
     margin: 6% 0;
   }
 }
 
 /*------------------ T E S T I M O N I A L S  -------------------------*/
-/* line 210, ../prueba/sass/_custom.scss */
+/* line 204, ../prueba/sass/_custom.scss */
 #block-views-block-testimonials-slider-block-1 {
   background: #fff;
   height: auto;
 }
-/* line 213, ../prueba/sass/_custom.scss */
+/* line 207, ../prueba/sass/_custom.scss */
 #block-views-block-testimonials-slider-block-1 p, #block-views-block-testimonials-slider-block-1 h2 {
   color: #465057;
 }
-/* line 217, ../prueba/sass/_custom.scss */
+@media screen and (max-width: 768px) {
+  /* line 210, ../prueba/sass/_custom.scss */
+  #block-views-block-testimonials-slider-block-1 img {
+    display: none;
+  }
+}
+/* line 215, ../prueba/sass/_custom.scss */
 #block-views-block-testimonials-slider-block-1 .swiper-slide {
   margin: 35px 0;
   text-align: left;
 }
 
-/* line 223, ../prueba/sass/_custom.scss */
+/* line 221, ../prueba/sass/_custom.scss */
 .testimonials-person-name {
   font-size: 1.5rem;
   font-weight: bold;
@@ -9036,17 +9030,17 @@ h2 {
   text-align: left;
 }
 
-/* line 230, ../prueba/sass/_custom.scss */
+/* line 228, ../prueba/sass/_custom.scss */
 .text {
   padding-left: 0;
 }
 
-/* line 234, ../prueba/sass/_custom.scss */
+/* line 232, ../prueba/sass/_custom.scss */
 .testimonials-main-title {
   font-weight: 300;
   margin-top: 6%;
 }
-/* line 237, ../prueba/sass/_custom.scss */
+/* line 235, ../prueba/sass/_custom.scss */
 .testimonials-main-title::after {
   background: #465057;
   content: " ";
@@ -9057,24 +9051,24 @@ h2 {
 }
 
 /*------------------  V I D E O  S E C T I O N   -------------------------*/
-/* line 250, ../prueba/sass/_custom.scss */
+/* line 248, ../prueba/sass/_custom.scss */
 .video-section-container {
   background-color: #465057;
   padding: 6% 0;
 }
 
-/* line 255, ../prueba/sass/_custom.scss */
+/* line 253, ../prueba/sass/_custom.scss */
 .best-property-title-container {
   float: none;
   padding-left: 0;
 }
 
-/* line 260, ../prueba/sass/_custom.scss */
+/* line 258, ../prueba/sass/_custom.scss */
 #block-segundaprueba h2 {
   color: #fff;
   font-weight: 300;
 }
-/* line 263, ../prueba/sass/_custom.scss */
+/* line 261, ../prueba/sass/_custom.scss */
 #block-segundaprueba h2::after {
   background: #fff;
   content: " ";
@@ -9084,47 +9078,47 @@ h2 {
   margin-bottom: 40px;
   width: 50px;
 }
-/* line 273, ../prueba/sass/_custom.scss */
+/* line 271, ../prueba/sass/_custom.scss */
 #block-segundaprueba p {
   color: #fff;
   font-size: 1.8rem;
   margin: 2.2% 0;
 }
 
-/* line 280, ../prueba/sass/_custom.scss */
+/* line 278, ../prueba/sass/_custom.scss */
 .video-wrapper {
   height: 300px;
   margin-top: -7%;
 }
 @media screen and (max-width: 768px) {
-  /* line 280, ../prueba/sass/_custom.scss */
+  /* line 278, ../prueba/sass/_custom.scss */
   .video-wrapper {
     margin: 5% 0px;
   }
 }
-/* line 286, ../prueba/sass/_custom.scss */
+/* line 284, ../prueba/sass/_custom.scss */
 .video-wrapper iframe {
   height: 100%;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  /* line 286, ../prueba/sass/_custom.scss */
+  /* line 284, ../prueba/sass/_custom.scss */
   .video-wrapper iframe {
     height: 100%;
   }
 }
 
-/* line 295, ../prueba/sass/_custom.scss */
+/* line 293, ../prueba/sass/_custom.scss */
 .text-intro-video {
   padding-left: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 295, ../prueba/sass/_custom.scss */
+  /* line 293, ../prueba/sass/_custom.scss */
   .text-intro-video {
     padding: 2%;
   }
 }
-/* line 300, ../prueba/sass/_custom.scss */
+/* line 298, ../prueba/sass/_custom.scss */
 .text-intro-video a {
   border: solid 2px #353f46;
   color: #353f46;
@@ -9133,7 +9127,7 @@ h2 {
   padding: 3% 6%;
   text-transform: uppercase;
 }
-/* line 307, ../prueba/sass/_custom.scss */
+/* line 305, ../prueba/sass/_custom.scss */
 .text-intro-video a:hover {
   border: solid 2px #4bcaff;
   color: #4bcaff;
@@ -9141,29 +9135,36 @@ h2 {
 }
 
 /*--------------   S E R V I C E S   S E C T I O N   --------------------*/
-/* line 317, ../prueba/sass/_custom.scss */
+/* line 315, ../prueba/sass/_custom.scss */
 .services-container {
   background-color: #47c9fd;
   padding: 2.7% 0;
 }
-/* line 321, ../prueba/sass/_custom.scss */
+/* line 319, ../prueba/sass/_custom.scss */
 .services-container .service-item-title {
   color: #fff;
   font-size: 2.5rem;
 }
-/* line 325, ../prueba/sass/_custom.scss */
+/* line 323, ../prueba/sass/_custom.scss */
 .services-container p {
   color: #fff;
   font-size: 12px;
   margin: 11% 0;
 }
+@media screen and (max-width: 768px) {
+  /* line 323, ../prueba/sass/_custom.scss */
+  .services-container p {
+    font-size: 1.5rem;
+    margin: 5% 0;
+  }
+}
 
-/* line 332, ../prueba/sass/_custom.scss */
+/* line 334, ../prueba/sass/_custom.scss */
 .services-main-title {
   color: #fff;
   font-weight: 300;
 }
-/* line 335, ../prueba/sass/_custom.scss */
+/* line 337, ../prueba/sass/_custom.scss */
 .services-main-title::after {
   background: #fff;
   content: " ";
@@ -9175,37 +9176,61 @@ h2 {
 }
 
 /*------------------  F O O T E R  S E C T I O N   -------------------------*/
-/* line 348, ../prueba/sass/_custom.scss */
+/* line 350, ../prueba/sass/_custom.scss */
 footer {
   background: #465057;
   padding: 3% 0px;
 }
-/* line 351, ../prueba/sass/_custom.scss */
+/* line 353, ../prueba/sass/_custom.scss */
 footer h5 {
   color: #6f787e;
   text-align: right;
 }
-/* line 355, ../prueba/sass/_custom.scss */
+@media screen and (max-width: 768px) {
+  /* line 353, ../prueba/sass/_custom.scss */
+  footer h5 {
+    margin: 0;
+    vertical-align: top;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 353, ../prueba/sass/_custom.scss */
+  footer h5 {
+    text-align: center;
+    margin: 4% 0;
+  }
+}
+/* line 365, ../prueba/sass/_custom.scss */
 footer ul {
   padding-left: 0;
 }
-/* line 357, ../prueba/sass/_custom.scss */
+/* line 367, ../prueba/sass/_custom.scss */
 footer ul li {
   display: inline-block;
   list-style: none;
 }
-/* line 360, ../prueba/sass/_custom.scss */
+/* line 370, ../prueba/sass/_custom.scss */
+footer ul li:last-child {
+  border: none;
+}
+/* line 373, ../prueba/sass/_custom.scss */
 footer ul li a {
   border-right: solid 2px #6f787e;
   color: #6f787e;
   padding: 0 15px;
 }
-/* line 364, ../prueba/sass/_custom.scss */
+/* line 377, ../prueba/sass/_custom.scss */
 footer ul li a:hover {
   text-decoration: none;
 }
 
-/* line 372, ../prueba/sass/_custom.scss */
+/* line 386, ../prueba/sass/_custom.scss */
 .footer-menu-container {
   padding-left: 0;
+}
+@media screen and (max-width: 360px) {
+  /* line 386, ../prueba/sass/_custom.scss */
+  .footer-menu-container {
+    margin: 4% 0;
+  }
 }

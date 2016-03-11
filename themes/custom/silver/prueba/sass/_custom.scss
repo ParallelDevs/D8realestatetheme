@@ -108,7 +108,7 @@ h2 {
 
   #site-wrapper {
     background: #428bca;
-    height: 5000px; /* Temp: Simulates a tall page. */
+    height: auto; /* Temp: Simulates a tall page. */
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -184,15 +184,9 @@ h2 {
       margin-top: 5px;
       width: 50px;
     }
-    @media screen and (max-width: 768px){
-      margin-left: 2%;
-    }
   }
   img {
     width: 32px;
-    @media screen and (max-width: 768px){
-      margin: 0 auto;
-    }
   }
   p {
     color: white;
@@ -213,7 +207,11 @@ h2 {
   p,h2 {
     color: $gray-darker;
   }
-
+  img {
+    @media screen and (max-width: 768px) {
+      display: none;
+      }
+    }
   .swiper-slide {
     margin: 35px 0;
     text-align: left;
@@ -326,7 +324,11 @@ h2 {
     color: #fff;
     font-size: 12px;
     margin: 11% 0;
-  }
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+      margin: 5% 0;
+      }
+    }
 }
 
 .services-main-title {
@@ -351,12 +353,23 @@ footer {
   h5 {
     color: #6f787e;
     text-align: right;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      vertical-align: top;
+    }
+    @media screen and (max-width: 360px) {
+      text-align: center;
+      margin: 4% 0;
+    }
   }
   ul {
     padding-left: 0 ;
     li {
       display: inline-block;
       list-style: none;
+      &:last-child {
+        border: none;
+      }
       a {
         border-right: solid 2px #6f787e;
         color: #6f787e;
@@ -369,6 +382,10 @@ footer {
   }
 }
 
+//container for footer menu
 .footer-menu-container {
   padding-left: 0;
+  @media screen and (max-width: 360px) {
+    margin: 4% 0;
+  }
 }
