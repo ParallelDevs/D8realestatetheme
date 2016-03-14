@@ -39,27 +39,27 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes }}>
+    <div class="col-md-6" {{ attributes }}>
       {% for item in items %}
-        <div {{ item.attributes }}>{{ item.content }}</div>
+        <div class="col-md-12"{{ item.attributes }}><p>{{ item.content }}</p></div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <div class="col-md-10 tweet-container" {{ attributes }}>{{ item.content }}</div>
+      <div class="col-md-12" {{ attributes }}><p>{{ item.content }}</p></div>
     {% endfor %}
   {% endif %}
 {% else %}
-  <div{{ attributes }}>
-    <div{{ title_attributes }}>{{ label }}</div>
+  <div class="col-md-6" {{ attributes }}>
+    <div class="col-md-12" {{ title_attributes }}><p>{{ label }}</p></div>
     {% if multiple %}
-      <div>
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
+    <div>
+      {% endif %}
+      {% for item in items %}
+        <div{{ item.attributes }}>{{ item.content }}</div>
+      {% endfor %}
+      {% if multiple %}
+    </div>
     {% endif %}
   </div>
 {% endif %}

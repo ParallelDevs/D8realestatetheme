@@ -24,7 +24,33 @@ h2 {
   display: none;
 }
 
+.intro-title-container {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  h2 {
+    background: rgba(77, 85, 91, 0.78);
+    color: white;
+    font-size: 3.6rem;
+    font-weight: lighter;
+    margin: 0px auto;
+    padding: 1%;
+  }
+}
 
+//first line of text intro
+.first-line {
+  width: 40%;
+}
+
+//second line of text intro
+.second-line {
+  width: 50%;
+}
+
+.helper-margin {
+  margin: 20px;
+}
 
 .nav-pills {
   a {
@@ -103,7 +129,7 @@ h2 {
   }
 
   #block-silver-branding {
-    width: 75%;
+    width: 100%;
   }
 
   #site-wrapper {
@@ -343,6 +369,43 @@ h2 {
     margin-bottom: 40px;
     width: 50px;
   }
+}
+
+/*------------------  A B O U T US  S E C T I O N    -------------------------*/
+
+
+#block-whoirblueasy {
+  background: url("../imgs/about_us.jpg");
+  background-size: cover;
+  height: 500px;
+  h2 {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 100px;
+    &::after {
+      background: #fff;
+      content: " ";
+      display: block;
+      height: 3px;
+      margin-top: 5px;
+      margin-bottom: 40px;
+      width: 50px;
+    }
+  }
+  p {
+    color: #fff;
+  }
+}
+
+.fa-facebook-official,
+.fa-dribbble,
+.fa-google-plus {
+  color: white;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+.top-text-social-icons {
+  float: none;
 }
 
 /*------------------  F O O T E R  S E C T I O N   -------------------------*/
